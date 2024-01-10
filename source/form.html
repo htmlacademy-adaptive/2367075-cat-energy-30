@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Подбор программы</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/152.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple_icon_180.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <title>Mobile Cat Energy</title>
+  </head>
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__logo header-logo">
-        <a class="header-logo__link" href="#">
-          <img class="header-logo__logo-pic" width="33" height="38" src="#" alt="Логотип.">
-        </a>
-        <a class="header-logo__link" href="#">
-          <img class="header-logo__logo-text" width="101" height="18" src="#" alt="Логотип.">
-        </a>
-    </div>
+      <a class="header-logo__link" href="#">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo_pic_desktop.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo_pic_tablet.svg">
+          <img class="header-logo__logo-pic" width="33" height="38" src="images/logo_pic_mobile.svg" alt="Логотип.">
+        </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo_text_desktop.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" width="101" height="18" srcset="images/logo_text_tablet.svg">
+          <img class="header-logo__logo-text" width="101" height="18" src="images/logo_text_mobile.svg" alt="Логотип.">
+        </picture>
+      </a>
+  </div>
     <div class="main-header__button">
       <div class="main-header__burger main-header__burger--top"></div>
       <div class="main-header__burger main-header__burger--middle"></div>
@@ -139,11 +149,19 @@
             <p class="address__city">ул. Большая Конюшенная, д. 19/8</p>
           </address>
         </div>
+        <div class="about-us__map">
+          <picture>
+            <source type="image/jpg" media="(min-width: 1440px)" srcset="images/map_desktop@1x.jpg 1x, images/map_desktop@2x.jpg 2x" width="1440" height="400">
+            <source type="image/jpg" media="(min-width: 768px)" srcset="images/map_tablet@1x.jpg 1x, images/map_tablet@2x.jpg 2x" width="768" height="400">
+            <img class="about-us__map-image" alt="Карта, показывающая где мы находимся" src="images/map_mobile@1x.jpg"
+              srcset="images/map_mobile@2x.jpg" width="320" height="362">
+          </picture>
+        </div>
       </section>
   </main>
   <footer class="main-footer">
     <a class="main-footer__logo-link" href="#">
-      <img class="main-footer__logo-pic" src="#" width="128" height="28" alt="Логотип.">
+      <img class="main-footer__logo-pic" src="images/footer_logo.svg" width="128" height="28" alt="Логотип.">
     </a>
     <ul class="main-footer__social-list">
       <li class="main-footer__social-item">
@@ -164,7 +182,7 @@
     </ul>
       <a class="main-footer__developer developer" href="#">
         <span class="developer__name">HTML Academy</span>
-        <img src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <img src="images/html_logo_pic.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
   </footer>
 </body>
