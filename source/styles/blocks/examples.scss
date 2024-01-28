@@ -1,0 +1,77 @@
+.example {
+  background-color: $bg-dark-grey;
+  padding: 25px 20px 40px;
+}
+
+.example__title {
+  color: $basic-black;
+  font-family: $primary-font;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__text {
+  color: $text-grey;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.example__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.example__item {
+  max-width: 124px;
+  width: 100%;
+  text-align: center;
+  padding: 15px 10px 5px;
+  border: 1px solid $border-grey;
+  border-radius: 5px;
+}
+
+.example__result-text {
+  color: $basic-black;
+  text-align: center;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.example__result-title {
+  color: $text-grey;
+  text-align: center;
+  font-family: $secondary-font;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.example__total-price {
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}

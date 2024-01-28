@@ -1,0 +1,24 @@
+.programm-choice {
+  max-width: 100%;
+  padding: 0 20px;
+  border: none;
+  margin-bottom: 26px;
+}
+
+.programm-choice__radio {
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+  margin: 0 -20px;
+  padding: 15px 20px;
+}
+
+.programm-choice__radio-item:not(:last-of-type) {
+  margin-bottom: 13px;
+}
+
+.programm-choice__text {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $text-grey;
+}

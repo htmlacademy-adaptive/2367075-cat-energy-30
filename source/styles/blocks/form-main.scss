@@ -1,0 +1,35 @@
+.form-main {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-main__title {
+  font-family: $primary-font;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $basic-black;
+  padding-top: 27px;
+  margin-top: 0;
+  margin-bottom: 37px;
+  padding-left: 20px;
+}
+
+.form-main__text {
+  font-family: $primary-font;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: $basic-black;
+  max-width: 100%;
+  margin-top: 0;
+  margin-bottom: 39px;
+  padding-left: 20px;
+}
+
+.form-main__form {
+  margin-bottom: 32px;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/152.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple_icon_180.png">
@@ -11,28 +11,25 @@
     <title>Mobile Cat Energy</title>
   </head>
 <body class="page__body">
-  <header class="main-header">
-    <div class="main-header__logo header-logo">
-      <a class="header-logo__link" href="#">
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo_pic_desktop.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo_pic_tablet.svg">
-          <img class="header-logo__logo-pic" width="33" height="38" src="images/logo_pic_mobile.svg" alt="Логотип.">
-        </picture>
-        <picture>
-          <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo_text_desktop.svg">
-          <source type="image/svg+xml" media="(min-width: 768px)" width="101" height="18" srcset="images/logo_text_tablet.svg">
-          <img class="header-logo__logo-text" width="101" height="18" src="images/logo_text_mobile.svg" alt="Логотип.">
-        </picture>
-      </a>
-  </div>a>
-    </div>
+  <header class="main-header main-header--index">
+    <a class="main-header__logo" href="#">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo_pic_desktop.svg">
+        <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo_pic_tablet.svg">
+        <img class="main-header__logo-pic" width="33" height="38" src="images/logo_pic_mobile.svg" alt="Логотип.">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" width="118" height="21" srcset="images/logo_text_desktop.svg">
+        <source type="image/svg+xml" media="(min-width: 768px)" width="101" height="18" srcset="images/logo_text_tablet.svg">
+        <img class="main-header__logo-text" width="101" height="18" src="images/logo_text_mobile.svg" alt="Логотип.">
+      </picture>
+    </a>
     <div class="main-header__button">
       <div class="main-header__burger main-header__burger--top"></div>
       <div class="main-header__burger main-header__burger--middle"></div>
       <div class="main-header__burger main-header__burger--bottom"></div>
     </div>
-  <nav class="main-header__nav">
+    <nav class="main-header__nav">
       <ul class="main-header__list">
         <li class="main-header__item main-header__item--active">
           <a class="main-header__link" href="index.html">главная</a>
@@ -44,14 +41,13 @@
           <a class="main-header__link" href="form.html">подбор программы</a>
         </li>
       </ul>
-  </nav>
-</header>
+    </nav>
+  </header>
 <main class="catalog-main">
   <section class="catalog-main__catalog catalog">
     <h1 class="catalog__title">Каталог продукции</h1>
     <ul class="catalog__list product-list">
       <li class="product-list__item product-card">
-        <img class="product-card__img" width="140" height="107" src="#" alt="Cat Energy PRO 500 г">
         <picture>
           <source type="image/png" media="(min-width: 768px)" srcset="images/pro_chiken_500_tablet_desktop@1x.png 1x, images/pro_chiken_500_tablet_desktop@2x.png 2x" width="161" height="172">
           <img class="product-card__img" alt="Cat Energy PRO 500 г" src="images/pro_chiken_500_mobile@1x.png"
@@ -205,7 +201,6 @@
         <button class="product-card__button" type="button">заказать</button>
       </li>
       <li class="product-list__item product-card">
-        <img class="product-card__img" width="140" height="107" src="#" alt="Cat Energy slim 500 г">
         <picture>
           <source type="image/png" media="(min-width: 768px)" srcset="images/slim_1000_riсe_tablet_desktop@1x.png 1x, images/slim_500_riсe_tablet_desktop@2x.png 2x" width="163" height="174">
           <img class="product-card__img" alt="Cat Energy slim 500 " src="images/slim_500_riсe_mobile@1x.png"
@@ -239,34 +234,43 @@
   </section>
   <section class="add-products">
     <h2 class="add-products__title">Дополнительные товары</h2>
-    <ul class="add-products__list add-list">
-      <li class="add-list__item add-item">
-        <h3 class="add-item__title">Сахарозаменитель</h3>
-        <p class="add-item__text">1 упаковка (100 г)</p>
-        <span>200 ₽</span>
-        <button class="add-item__button" type="button">заказать</button>
+    <ul class="add-products__list">
+      <li class="add-products__item">
+        <h3 class="add-products__name">Сахарозаменитель</h3>
+        <div class="add-products__text">
+          <p>1 упаковка (100 г)</p>
+          <span>200 ₽</span>
+        </div>
+        <button class="add-products__button" type="button">заказать</button>
       </li>
-      <li class="add-list__item add-item">
-        <h3 class="add-item__title">Питьевая вода</h3>
-        <p class="add-item__text">5 литров</p>
-        <span>50 ₽</span>
-        <button class="add-item__button" type="button">заказать</button>
+      <li class="add-products__item">
+        <h3 class="add-products__name">Питьевая вода</h3>
+        <div class="add-products__text">
+          <p>5 литров</p>
+          <span>50 ₽</span>
+        </div>
+        <button class="add-products__button" type="button">заказать</button>
       </li>
-      <li class="add-list__item add-item">
-        <h3 class="add-item__title">молоко</h3>
-        <p class="add-item__text">1 литр</p>
-        <span>100 ₽</span>
-        <button class="add-item__button" type="button">заказать</button>
+      <li class="add-products__item">
+        <h3 class="add-products__name">молоко</h3>
+        <div class="add-products__text">
+          <p>1 литр</p>
+          <span>100 ₽</span>
+        </div>
+        <button class="add-products__button" type="button">заказать</button>
       </li>
-      <li class="add-list__item add-item">
-        <h3 class="add-item__title">витамины</h3>
-        <p class="add-item__text">1 упаковка (30 г)</p>
-        <span>300 ₽</span>
-        <button class="add-item__button" type="button">заказать</button>
+      <li class="add-products__item">
+        <h3 class="add-products__name">витамины</h3>
+        <div class="add-products__text">
+          <p>1 упаковка (30 г)</p>
+          <span>300 ₽</span>
+        </div>
+        <button class="add-products__button" type="button">заказать</button>
       </li>
     </ul>
-    <div class="add-products__present present">
-      <p class="present__text">Закажите все и получите чехол для кота в подарок!</p>
+    <div class="add-products__present">
+      <svg class="add-products__presen-svg" width="55" height="60"></svg>
+      <p class="add-products__present-text">Закажите все<br> и получите чехол для кота в подарок!</p>
     </div>
   </section>
   <section class="about-us">
@@ -283,8 +287,6 @@
         <img class="about-us__map-image" alt="Карта, показывающая где мы находимся" src="images/map_mobile@1x.jpg"
           srcset="images/map_mobile@2x.jpg" width="320" height="362">
       </picture>
-    </div>
-    <div class="about-us__map">
       <span class="visually-hidden">Карта, показывающая где мы находимся</span>
     </div>
   </section>
