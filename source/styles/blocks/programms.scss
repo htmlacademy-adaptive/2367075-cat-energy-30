@@ -1,0 +1,77 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.programms__list {
+  @include list-unstyled;
+  display: flex;
+  flex-direction: column;
+}
+
+.programms__item {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background-color: $bg-grey;
+  margin: 0 20px 20px;
+  padding: 40px 20px 20px;
+}
+
+.programms__title {
+  position: relative;
+  color: $text-black;
+  font-family: $primary-font;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin: 0 0 29px;
+  padding-left: 70px;
+}
+
+.programms__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 50px;
+  height: 50px;
+  background: $basic-green;
+  border-radius: 50%;
+}
+
+
+.programms__text {
+  color: $text-grey;
+  font-family: $secondary-font;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  padding-bottom: 20px;
+  margin-bottom: 19px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.programms__link {
+  position: relative;
+  color: $text-black;
+  font-family: $primary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.programms__link::after {
+  content: "";
+  position: absolute;
+  left: 98px;
+  top: 7px;
+  width: 32px;
+  height: 10px;
+  background: url("../../img/icons/icon_arrow.svg") no-repeat center;
+  margin-right: 15px;
+}

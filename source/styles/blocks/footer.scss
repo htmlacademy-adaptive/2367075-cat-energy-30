@@ -1,0 +1,65 @@
+.main-footer {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $bg-grey;
+}
+
+.main-footer__logo-link {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main-footer__social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 20px 0;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+  min-width: 280px;
+}
+
+.main-footer__social-item {
+  width: 28px;
+  height: 22px;
+}
+
+.main-footer__vk {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background: url("../../img/logotypes/vkontakte.svg") center no-repeat;
+}
+
+.main-footer__youtube {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background: url("../../img/logotypes/youtube.svg") center no-repeat;
+}
+
+.main-footer__telegram {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background: url("../../img/logotypes/telegram.svg") center no-repeat;
+}
+
+.main-footer__developer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: $text-grey;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  padding-top: 20px;
+}
